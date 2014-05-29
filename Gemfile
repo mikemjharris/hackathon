@@ -13,7 +13,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-github'
 gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-instagram'
-
+gem 'httparty'
 
 group :development, :test do
   gem 'pry-rails'
