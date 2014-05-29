@@ -21,3 +21,4 @@
 <br />
 
 <%= link_to 'New Contact', new_contact_path %>
+<a target="_blank" href="https://api.instagram.com/v1/users/<%= current_user.uid %>/media/recent/?access_token=<%= current_user.instagram_token %>">Link to my instagram</a>

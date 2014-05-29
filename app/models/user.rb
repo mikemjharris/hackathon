@@ -18,6 +18,11 @@ class User < ActiveRecord::Base
       user.provider = auth.provider
       user.uid = auth.uid
       user.image = auth.info.image
+      if provider == "facebook"
+        user.facebook_token = auth.credentials.token
+      else
+        user.instagram_token = auth.credentials.token
+      end
       user
     else
       
