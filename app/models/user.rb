@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
          :omniauthable, omniauth_providers: [:twitter, :google_oauth2, :facebook, :github, :linkedin, :instagram]
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :uid, :provider, :image
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :uid, :provider, :image, :facebook_token, :twitter_token, :github_token, :instagram_token, :linkedin_token, :google_oauth2_token
   # attr_accessible :title, :body
 
   def self.from_omniauth(auth)
